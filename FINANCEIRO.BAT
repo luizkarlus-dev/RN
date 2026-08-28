@@ -3,7 +3,7 @@ title Mapeamento - Financeiro
 color 0A
 
 cmdkey /delete:RNSERVER01 >nul 2>&1
-cmdkey /add:RNSERVER /user:RNSERVER01\Financeiro /pass:abc.123
+cmdkey /add:RNSERVER01 /user:RNSERVER01\Financeiro /pass:abc.123
 
 net use S: /delete /y >nul 2>&1
 net use T: /delete /y >nul 2>&1

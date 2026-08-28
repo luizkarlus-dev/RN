@@ -3,7 +3,7 @@ title Mapeamento - Compras
 color 0A
 
 cmdkey /delete:RNSERVER01 >nul 2>&1
-cmdkey /add:RNSERVER /user:RNSERVER\Compras /pass:abc.123
+cmdkey /add:RNSERVER01 /user:RNSERVER\Compras /pass:abc.123
 
 net use S: /delete /y >nul 2>&1
 net use T: /delete /y >nul 2>&1
@@ -14,12 +14,12 @@ echo.
 echo Mapeamento de Compras concluido.
 echo Unidade: S:
 echo.
-
-echo Iniciando copia dos arquivos...
-robocopy C:\Temp S:\ /E /COPY:DAT /R:2 /W:2
-
-echo.
-echo Copia concluida.
-echo.
+;
+;echo Iniciando copia dos arquivos...
+;robocopy C:\Temp S:\ /E /COPY:DAT /R:2 /W:2
+;
+;echo.
+;echo Copia concluida.
+;echo.
 
 pause
